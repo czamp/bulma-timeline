@@ -5,14 +5,15 @@
     display: -webkit-flex
     margin-bottom: 2.4rem
     position: relative
-    &::before
-      background: #f0f1f4
-      content: ""
-      height: 100%
-      left: 1.1rem
-      position: absolute
-      top: 2.4rem
-      width: .2rem
+    &:not(:last-child)
+      &::before
+        background: #f0f1f4
+        content: ""
+        height: 100%
+        left: 1.1rem
+        position: absolute
+        top: 2.4rem
+        width: .2rem
 
     .timeline-left
       -webkit-flex: 0 0 auto
